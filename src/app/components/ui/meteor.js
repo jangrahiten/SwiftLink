@@ -3,7 +3,7 @@ import { cn } from "@/libs/utils";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-export const Meteors = React.memo(({ number, className }) => {
+const MeteorsComponent = ({ number, className }) => {
   const [meteors, setMeteors] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const Meteors = React.memo(({ number, className }) => {
     setMeteors(generated);
   }, [number]);
 
-  if (meteors.length === 0) return null; // or a fallback loader
+  if (meteors.length === 0) return null;
 
   return (
     <motion.div
@@ -44,4 +44,8 @@ export const Meteors = React.memo(({ number, className }) => {
       ))}
     </motion.div>
   );
-});
+};
+
+MeteorsComponent.displayName = "Meteors";
+
+export const Meteors = React.memo(MeteorsComponent);
