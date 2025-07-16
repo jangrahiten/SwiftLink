@@ -44,7 +44,7 @@ export default function Home() {
 
    useEffect(() => {
       const urlfunction = async ()=>{
-     const getUrls = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/url/getUrl`,{
+     const getUrls = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/url/geturl`,{
       withCredentials: true,
      });
      const data = getUrls.data.urls;
