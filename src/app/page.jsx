@@ -139,7 +139,7 @@ export default function Home() {
                   <div className="backdrop-blur-xl flex flex-col items-center bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl shadow-purple-500/10">
                      <div className="bg-gradient-to-br from-cyan-400 to-purple-600 rounded-full w-fit px-4 py-4 flex items-center justify-center mx-auto mb-4"><Lock className="text-white w-12 h-12" /></div>   
 
-                     <h1 className="flex w-full justify-center text-white font-semibold text-4xl my-2">Sign In Required</h1>
+                     <h1 className="flex w-full justify-center text-white font-semibold text-3xl md:text-4xl my-2">Sign In Required</h1>
                      <h2 className="flex w-full justify-center text-gray-400  text-[0.9rem] md:text-xl my-4 ">Create an Account or Sign In to shorten URLs</h2>
 
                      <button className='bg-gradient-to-r text-white from-cyan-500 to-purple-500 shadow-lg shadow-cyan-500/25 px-8 py-2 rounded-2xl text-2xl font-semibold cursor-pointer' onClick={()=>setShowPopUP(prev => !prev)}>Get Started</button>
